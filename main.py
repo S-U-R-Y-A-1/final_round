@@ -81,38 +81,38 @@ else:
 
 # ✅ Load the uploaded image
     # ✅ List of image URLs from your GitHub repository
-image_urls = [
-    "https://raw.githubusercontent.com/S-U-R-Y-A-1/quiz_app/main/background1.jpg",
-    "https://raw.githubusercontent.com/S-U-R-Y-A-1/quiz_app/main/background2.jpg",
-    "https://raw.githubusercontent.com/S-U-R-Y-A-1/quiz_app/main/background3.jpg",
-]
+    image_urls = [
+    "https://raw.githubusercontent.com/S-U-R-Y-A-1/final_round/main/background1.jpg",
+    "https://raw.githubusercontent.com/S-U-R-Y-A-1/final_round/main/background2.jpg",
+    "https://raw.githubusercontent.com/S-U-R-Y-A-1/final_round/main/background3.jpg",
+    ]
 
 # ✅ Function to fetch image from URL and convert to Base64
-def get_base64_from_url(image_url):
-    response = requests.get(image_url)
-    if response.status_code == 200:
-        return base64.b64encode(response.content).decode()
-    else:
-        st.error(f"Failed to load image: {image_url}")
-        return None
+    def get_base64_from_url(image_url):
+        response = requests.get(image_url)
+        if response.status_code == 200:
+            return base64.b64encode(response.content).decode()
+        else:
+            st.error(f"Failed to load image: {image_url}")
+            return None
 
 # ✅ Initialize session state variables
-if "current_image_index" not in st.session_state:
-    st.session_state.current_image_index = 0
-    st.session_state.last_update = time.time()
+    if "current_image_index" not in st.session_state:
+        st.session_state.current_image_index = 0
+        st.session_state.last_update = time.time()
 
 # ✅ Change background image every 180 seconds
-if time.time() - st.session_state.last_update > 180:
-    st.session_state.current_image_index = (st.session_state.current_image_index + 1) % len(image_urls)
-    st.session_state.last_update = time.time()
+    if time.time() - st.session_state.last_update > 180:
+        st.session_state.current_image_index = (st.session_state.current_image_index + 1) % len(image_urls)
+        st.session_state.last_update = time.time()
 
 # ✅ Get current image and convert it to Base64
-current_image_url = image_urls[st.session_state.current_image_index]
-image_base64 = get_base64_from_url(current_image_url)
+    current_image_url = image_urls[st.session_state.current_image_index]
+    image_base64 = get_base64_from_url(current_image_url)
 
 # ✅ Apply dynamic background image
-if image_base64:
-    background_css = f"""
+    if image_base64:
+        background_css = f"""
     <style>
         .stApp {{
             background-image: url("data:image/png;base64,{image_base64}");
