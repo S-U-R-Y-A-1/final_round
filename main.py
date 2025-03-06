@@ -82,7 +82,7 @@ else:
 # ✅ Load the uploaded image
     # ✅ List of image URLs from your GitHub repository
     image_urls = [
-    "https://raw.githubusercontent.com/S-U-R-Y-A-1/final_round/main/background1.jpg",
+    "https://raw.githubusercontent.com/S-U-R-Y-A-1/final_round/main/background.jpg",
     "https://raw.githubusercontent.com/S-U-R-Y-A-1/final_round/main/background2.jpg",
     "https://raw.githubusercontent.com/S-U-R-Y-A-1/final_round/main/background3.jpg",
     ]
