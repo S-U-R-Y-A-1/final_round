@@ -222,18 +222,44 @@ else:
     client = Groq(api_key="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")
 # Define quiz questions in a dictionary
     questions = [
-    {"question": "To unlock this, use the four letters below and create a seven-letter word: 'UMNI'. \n\nWin Amount : $1000", "answer": [77, 73, 78, 73, 77, 85, 77],"amount":1000},
-    {"question": "A robber left a clue: HFXM NX KZQQ GQTTI\nDecipher the shift cipher where the shift is determined by the fifth preceding letter. (eg: H -> C)\n\nWin Amount : $1000", "answer": [67, 65, 83, 72, 32, 73, 83, 32, 70, 85, 76, 76, 32, 79, 70, 32, 66, 76, 79, 79, 68],"amount":1000},
-    {"question": "To unlock this locker convert the bank name 'MAGADHA BANK' to ASCII values. (Note: Consider only the values of capital letters and neglect the space)\n\nWin Amount : $1200", "answer": ['M', 'A', 'G', 'A', 'D', 'H', 'A', 'B', 'A', 'N', 'K'],"amount":1200},
-    {"question": "Create a bomb to break this cube shaped locker whose volume is given by 1728 cubic meters. Now you have to give the measure of the locker's side.\n\nWin Amount : $2300", "answer": [49,50],"amount":2300},
-    {"question": "The passcode is a 5-character alphanumeric sequence. The first two are the initials of a famous cricketer with a biopic. The last three digits have a sum of 5, with the first and last being consecutive.\n\nWin Amount : $2500", "answer": [77, 83, 50, 48, 51],"amount":2500},
-    {"question": "To break this locker convert the three-digit number from the previous question into binary.\n\nWin Amount : $2800", "answer": 203,"amount":2800},
-    {"question": "To unlock this locker, Solve this riddle:\nShapeless, yet I carve through stone, \nDancing swiftly, yet never alone. \nI follow paths both old and new, \nFrom mountain peaks to oceans blue.\nTurn me around, and you shall find,\n A beast that hunts, fierce and unkind.\nWhat am I?\n\nWin Amount : $3000", "answer": [70, 76, 79, 87],"amount":3000},
-    {"question": "Use the bubble sort algorithm to sort: 5 4 2 3 1. Enter the number of swaps needed. \n\nWin Amount : $3200", "answer": [57],"amount":3200},
-    {"question": "To unlock the vault, you need a five-letter word.\nIt is something that everyone expects a lot in a MASS HERO MOVIE\nIt contains the first 3 letters as acronym for a specific health dept.\nThe first letter is the same as the last letter of EYE and last letter is the last letter of the word SPY.\nThe word contextually speaks about allowing.\n\nWin Amount : $3500", "answer": [69, 78, 84, 82, 89],"amount":3500},
-    {"question": "Solve the riddle to unlock the locker:\nI come from notes, both big and small, Add them up, you will find it all.\n Take two notes of 500, bold and grand,\n Then add five of 200, just as planned.  Drop in four of 100, crisp and neat, Now tell me, what sum do you meet?  The color you seek, bold and bright, Is on the note that held this height!\n\nWin Amount : $4500", "answer": [77, 65, 71, 69, 78, 84, 65],"amount":4500},
-    {"question": "A six-digit balance has a digit sum of 36. The first and last digits are the same, the middle two are identical, and the second and fifth digits are twice the middle. The sum of the second and third is equal to the first. Find the number.\n\nWin Amount : $5000", "answer": [57, 51, 54, 54, 51, 57],"amount":5000},
+    
+    {
+        "question": "Loki’s Time Loop Mystery:\n\nLoki finds himself trapped in a time loop inside the TVA (Time Variance Authority). Every time he tries to stop the Temporal Loom from overloading, he fails and is sent back to the same moment—again and again. He soon realizes that he must keep repeating the loop until he learns exactly how to fix the problem.\n\nDuring one loop, OB (Ouroboros) tells Loki that he has been in this loop for centuries, trying to figure it out.\n\nIf Loki has been in the loop for centuries, and assuming he restarts the loop once every hour, what is the minimum number of loops he must have gone through over 10 years?\n\n(Consider 1 year = 365 days, ignoring leap years.)\n\nWin Amount : $2300",
+        "answer": [56, 49, 48, 48, 48],  # ASCII for "87600"
+        "amount": 2300
+    },
+    {
+        "question": "Loki’s Multiversal Branching Dilemma:\n\nAt the TVA, Loki learns that every decision creates a branching timeline. The Temporal Loom is designed to manage these branches, but if too many appear at once, the system becomes unstable.\n\nWhile analyzing TVA records, Loki discovers that each person’s single choice can create 3 possible new branches. If those branches continue creating more branches in the same pattern, the number of timelines grows exponentially.\n\nIf Loki starts with one timeline and allows branching to continue for 5 decision cycles, how many total timelines will exist at the end?\n\n(Each timeline splits into 3 new branches per cycle.)\n\nWin Amount : $2500",
+        "answer": [50, 52, 51],  # ASCII for "243"
+        "amount": 2500
+    },
+    {
+        "question": "Graph Theory – Hidden Relationship in the Murder Network:\n\nArun, the investigator, discovers that the killer has been using a hidden graph structure to determine the pattern of murders. The victims are not randomly chosen; instead, their locations form a mathematical network, where each victim is a node, and certain victims are connected based on a hidden rule.\n\nThe known relationships are:\n\nNode 1 (Victim 1) is directly connected to Node 3 (Victim 3)\nNode 2 (Victim 2) is directly connected to Node 4 (Victim 4)\n\nEach victim's location is given in GPS coordinates:\nNode 1 (Victim 1): (10, 20)\nNode 2 (Victim 2): (30, 40)\nNode 3 (Victim 3): (12, 22)\nNode 4 (Victim 4): (32, 42)\n\nArun notices that certain high-value links (strong relationships) exist in the network, meaning that two victims are more likely to be related if their Euclidean distance is smaller or if they share a hidden numerical property.\n\nGiven this information, find out whether there is a hidden relationship between:\n\n- Node 1 and Node 2\n- Node 2 and Node 3\n- Node 1 and Node 4\n- Node 3 and Node 4\n\nAdditionally, if there is a strong connection between two nodes, predict which Node 5 could be added to this network.\n\nWin Amount : $2800",
+        "answer": [50, 51],  # ASCII for "23" (strongest link)
+        "amount": 2800
+    },
+    {
+        "question": "The Doll’s Hidden Evidence:\n\nDuring the investigation of a serial killer case, Arun finds an old, tattered doll near the latest crime scene. The forensic team suspects that the killer is leaving behind these dolls as a signature. Upon closer inspection, Arun notices something unusual—the doll’s button eyes are positioned in an asymmetric way, and its stitches form a specific angle.\n\nWhile examining the past crime scenes, he realizes that every murder site had a similar doll, and the position of its button eyes always points toward the next crime scene.\n\nArun takes measurements from the doll’s button positions at the latest crime scene and finds the following:\n\nLeft Eye Coordinate: (5, 10)\nRight Eye Coordinate: (15, 20)\n\nHe remembers that in the last case, the killer had positioned the doll’s eyes such that the midpoint between them pointed towards the next location. If this pattern continues, where should the police search next?\n\nWin Amount : $3000",
+        "answer": [49, 48, 49, 53],  # ASCII for "10,15"
+        "amount": 3000
+    },
+    {
+        "question": "A drone in Interstellar flew at 150 km/h for 10 years. Calculate the total distance it traveled.\n\nWin Amount : $3500",
+        "answer": [49, 51, 49, 48, 48, 48, 48, 48],  # ASCII for "13140000"
+        "amount": 3500
+    },
+    {
+        "question": "Vikram Movie – Bullet Trajectory Calculation:\n\nIn Vikram (2022), there are several high-intensity action sequences where bullets travel through multiple objects before hitting the target. One of the most thrilling moments involves calculating the trajectory of a bullet to ensure a precise kill.\n\nA sniper fires a bullet at 900 m/s towards an enemy 600 meters away. However, the bullet must pass through two glass panes, which each reduce the bullet’s speed by 10% upon impact.\n\nWhat is the final velocity of the bullet when it reaches the target?\n\n(Ignore air resistance and assume each glass pane reduces the speed before the bullet continues its path.)\n\nWin Amount : $7500",
+        "answer": [55, 50, 57],  # ASCII for "729"
+        "amount": 7500
+    },
+    {
+        "question": "Enthiran Movie – Speed Required to Run on Walls:\n\nIn Enthiran (2010), Chitti the Robot performs incredible stunts, including running on walls. To achieve this, he must generate enough centripetal force to counteract gravity.\n\nIf the radius of his running path (his turn curve) is 5 meters, what minimum speed (in m/s) does he need to maintain to stay on the wall without falling?\n\nWin Amount : $8500",
+        "answer": [55, 48],  # ASCII for "70" (7 m/s)
+        "amount": 8500
+    }
 ]
+
 
 # Initialize session state variables
     if "current_question" not in st.session_state:
