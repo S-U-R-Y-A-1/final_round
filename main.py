@@ -208,7 +208,7 @@ else:
 # Initialize Groq client
     client = Groq(api_key="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")
 # Define quiz questions in a dictionary
-questions = [
+    questions = [
     
     {
         "question": "Loki’s Time Loop Mystery:\n\nLoki finds himself trapped in a time loop inside the TVA (Time Variance Authority). Every time he tries to stop the Temporal Loom from overloading, he fails and is sent back to the same moment—again and again. He soon realizes that he must keep repeating the loop until he learns exactly how to fix the problem.\n\nDuring one loop, OB (Ouroboros) tells Loki that he has been in this loop for centuries, trying to figure it out.\n\nIf Loki has been in the loop for centuries, and assuming he restarts the loop once every hour, what is the minimum number of loops he must have gone through over 10 years?\n\n(Consider 1 year = 365 days, ignoring leap years.)\n\nWin Amount : $2300",
