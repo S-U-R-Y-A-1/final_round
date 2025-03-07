@@ -264,7 +264,7 @@ questions = [
     {
         "question": "Nanban – Cracking the Locker Code 🔐\n\nIn the movie Nanban, Vijay (Pari) tries to steal the question paper for his friend. Imagine that the question paper is locked inside a digital safe, which is protected by a 4-digit passcode.\n\n**Question:** Finding the Total Possible Passcodes\nThe passcode consists of 4 unique digits (0-9), meaning repetition is not allowed.\n\nHow many different 4-digit passcodes can be created under this rule?\n\n(Hint: Use the formula **n! / (n-r)!**)\n\nWin Amount : $0",
         "answer": [53, 48, 52, 48],  # ASCII for "5040"
-        "amount": 5000
+        "amount": 5000,
         "loss": 0
 
     },
@@ -277,7 +277,7 @@ questions = [
     {
         "question": "A drone in Interstellar flew at 150 km/h for 10 years. Calculate the total distance it traveled.\n\nWin Amount : $3500",
         "answer": [49, 51, 49, 48, 48, 48, 48, 48],  # ASCII for "13140000"
-        "amount": 3500
+        "amount": 3500,
         "loss": 0
 
     },
@@ -290,7 +290,7 @@ questions = [
     {
         "question": "Enthiran Movie – Speed Required to Run on Walls:\n\nIn Enthiran (2010), Chitti the Robot performs incredible stunts, including running on walls. To achieve this, he must generate enough centripetal force to counteract gravity.\n\nIf the radius of his running path (his turn curve) is 5 meters, what minimum speed (in m/s) does he need to maintain to stay on the wall without falling? hint: use the formula, v = square root( r * 9.8 )\n\nWin Amount : $8500",
         "answer": [55],  # ASCII for "70" (7 m/s)
-        "amount": 8500
+        "amount": 8500,
         "loss": 0
 
     }
