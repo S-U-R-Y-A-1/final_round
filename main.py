@@ -145,7 +145,7 @@ else:
         top: 50%;
         left: 50%;
         margin-left: 0px;
-        margin-top: 400px;
+        margin-top: 600px;
         background-color: white; /* Changed to solid white */
     border: 2px solid black; /* Added black border */
 
@@ -385,7 +385,7 @@ else:
         st.markdown(input_css, unsafe_allow_html=True)
 
 # ✅ Wrap st.text_input inside a div positioned at the bottom
-        st.markdown("<div style='margin-top: 375px;'></div>", unsafe_allow_html=True)  # Adjust margin as needed
+        st.markdown("<div style='margin-top: 700px;'></div>", unsafe_allow_html=True)  # Adjust margin as needed
 
     # User input box
         user_answer = st.text_input("Your Answer:", key=f"answer_{st.session_state.current_question}")
