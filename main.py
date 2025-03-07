@@ -247,7 +247,7 @@ questions = [
         "answer": [56, 51],  # ASCII for "83" (83.33%)
         "amount": -500,
         "loss":-700
-    }
+    },
         {
         "question": "Titanic – Iceberg Collision Impact Calculation:\n\nIn Titanic (1997), the ship collided with an iceberg, leading to one of the most infamous maritime disasters in history. Let's calculate the force of impact when the Titanic struck the iceberg.\n\nThe Titanic had a mass of 52,310 metric tons (52,310,000 kg) and was moving at 22.5 knots (11.57 m/s) when it hit the iceberg. Assuming the ship came to a stop in 30 seconds after impact, what was the average force exerted on the Titanic during the collision?\n\n(Hint: Use the formula **Force = (mass × velocity) / time**)\n\nWin Amount : $0",
         "answer": [50, 48, 49, 55, 51, 52, 53, 55],  # ASCII for "20173457"
@@ -260,7 +260,7 @@ questions = [
         "answer": [53, 57],  # ASCII for "59"
         "amount": -700,
         "loss":-900
-    }
+    },
     {
         "question": "Nanban – Cracking the Locker Code 🔐\n\nIn the movie Nanban, Vijay (Pari) tries to steal the question paper for his friend. Imagine that the question paper is locked inside a digital safe, which is protected by a 4-digit passcode.\n\n**Question:** Finding the Total Possible Passcodes\nThe passcode consists of 4 unique digits (0-9), meaning repetition is not allowed.\n\nHow many different 4-digit passcodes can be created under this rule?\n\n(Hint: Use the formula **n! / (n-r)!**)\n\nWin Amount : $0",
         "answer": [53, 48, 52, 48],  # ASCII for "5040"
@@ -273,7 +273,7 @@ questions = [
         "answer": [49, 52],  # ASCII for "14"
         "amount": -1000,
         "loss":-1200
-    }
+    },
     {
         "question": "A drone in Interstellar flew at 150 km/h for 10 years. Calculate the total distance it traveled.\n\nWin Amount : $3500",
         "answer": [49, 51, 49, 48, 48, 48, 48, 48],  # ASCII for "13140000"
