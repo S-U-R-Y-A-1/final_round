@@ -114,7 +114,7 @@ else:
     st.markdown(background_css, unsafe_allow_html=True)
     box_css = """
 <style>
-    .centered-box {
+.centered-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -145,7 +145,7 @@ else:
         top: 50%;
         left: 50%;
         margin-left: 0px;
-        margin-top: 600px;
+        margin-top: 300px;
         background-color: white; /* Changed to solid white */
     border: 2px solid black; /* Added black border */
 
@@ -181,8 +181,6 @@ else:
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         width: 50%;
     }
-    
-    
 
     .timer {
         font-size: 20px;
@@ -304,7 +302,7 @@ else:
         st.session_state.remaining_time = 10  # Set initial timer
 
 # Time limit per question
-    time_limit = 2  # seconds
+    time_limit = 120  # seconds
 
 # Function to validate answers using Groq API
     def validate_answer(index, user_answer):
@@ -378,7 +376,7 @@ else:
         st.markdown(input_css, unsafe_allow_html=True)
 
 # ✅ Wrap st.text_input inside a div positioned at the bottom
-        st.markdown("<div style='margin-top: 700px;'></div>", unsafe_allow_html=True)  # Adjust margin as needed
+        st.markdown("<div style='margin-top: 375px;'></div>", unsafe_allow_html=True)  # Adjust margin as needed
 
     # User input box
         user_answer = st.text_input("Your Answer:", key=f"answer_{st.session_state.current_question}")
