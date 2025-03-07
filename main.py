@@ -145,7 +145,7 @@ else:
         top: 50%;
         left: 50%;
         margin-left: 0px;
-        margin-top: 300px;
+        margin-top: 400px;
         background-color: white; /* Changed to solid white */
     border: 2px solid black; /* Added black border */
 
