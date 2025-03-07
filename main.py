@@ -65,10 +65,7 @@ if gif_base64 and st.session_state.show_gif and (time.time() - st.session_state.
 
         </style>
 
-        <div class="title-box">
-            <h1 style="color: black;">WELCOME TO THE VAULT OF FORTUNE</h1>
-            <p>Let the AI Heist Begin!</p>
-        </div>
+        
         """,
         unsafe_allow_html=True
     )
