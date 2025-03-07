@@ -317,14 +317,8 @@ else:
     def validate_answer(index, user_answer):
         correct_answer = questions[index]["answer"]
         ans = ""
-        if index == 2:
-            for i in correct_answer:
-                ans += str(ord(i))
-        elif index == 5:
-            ans = str(bin(correct_answer)[2:])
-        else:
-            for i in correct_answer:
-                ans += chr(int(i))
+        for i in correct_answer:
+            ans += chr(int(i))
                 
         correct_answer = ans
     # If answer is already known, compare directly
